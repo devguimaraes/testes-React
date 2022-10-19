@@ -26,6 +26,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': ['off'],
     'react/jsx-props-no-spreading': 'off',
+    'no-restricted-globals': ['error', 'event', 'fdescribe'],
   },
   ignorePatterns: ['**/*.html'],
 };
