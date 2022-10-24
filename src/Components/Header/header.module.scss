@@ -1,0 +1,36 @@
+.header_background {
+  width: 100%;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4B69FD;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1440px){
+    justify-content: space-around;
+  }
+}
+
+
+.logo{
+  padding-top: 55px;
+  position: relative;
+
+  @media (min-width: 1024px) {
+    top: -25px;
+  }
+}
+
+.logotipo_imagem{
+  width: 280px;
+  position: relative;
+  bottom: -22px;
+
+}
