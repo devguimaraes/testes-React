@@ -1,7 +1,7 @@
 import React from 'react';
 import Formulario from './Components/Formulario';
 import { Header } from './Components/Header';
-import './index.css';
+import './index.module.scss';
 
 const App = () => {
   return (
