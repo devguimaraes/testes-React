@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './header.module.scss';
 
-//TODO Fazer layout cabecalho e testes(se necessário) de acordo com o design do figma
 export const Header = () => {
   return (
     <header>
@@ -9,7 +8,7 @@ export const Header = () => {
         <div className={styles.logotipo}>
           <picture>
             <source
-              srcset="/imagens/logo-1024w.png"
+              srcSet="/imagens/logo-1024w.png"
               media="(min-width: 1024px)"
             />
             <img
@@ -23,7 +22,7 @@ export const Header = () => {
           <img
             src="/imagens/WavyStock.png"
             className={styles.logotipo_imagem}
-            alt="Desenho 2d de mulher segurando um planner"
+            alt="Desenho 2d de mulher segurando uma lousa pequena"
           />
         </div>
       </div>
