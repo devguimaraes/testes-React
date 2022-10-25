@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { Formulario } from './index';
 
 //Testar quando o input estiver vázio não será possivel adicionar novos participantes
-/* test('Validacao de input', () => {
+test('Validacao de input', () => {
   render(<Formulario />);
   const formulario = screen.getByText(
     (content, element) => element.tagName.toLowerCase() === 'form'
@@ -21,8 +21,8 @@ import { Formulario } from './index';
   expect(botao).toBeDisabled();
   expect(TextBotao).toBeInTheDocument();
 });
- */
-test('quando o input estiver vazio o button para estar disabel', () => {
+
+/* test( () => {
   render(<Formulario />);
 
   const input = screen.getByPlaceholderText(
@@ -32,4 +32,4 @@ test('quando o input estiver vazio o button para estar disabel', () => {
 
   expect(input).toBeInTheDocument();
   expect(botao).toBeDisabled();
-});
+}); */
