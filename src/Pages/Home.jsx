@@ -1,6 +1,7 @@
 import Formulario from '../Components/Formulario';
 import { Header } from '../Components/Header';
 import ListaParticipantes from '../Components/ListadeParticipantes';
+import Rodape from '../Components/rodape';
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
       <main>
         <Formulario />
         <ListaParticipantes />
+        <Rodape />
       </main>
     </>
   );
