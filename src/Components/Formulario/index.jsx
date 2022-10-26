@@ -1,27 +1,41 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import useAdicionarParticipante from '../../State/Hooks/useAdicionarPartipante';
+import useMensagemDeErro from '../../State/Hooks/useMensagemErro';
 import styles from './index.module.scss';
 export const Formulario = () => {
-  const [state, setState] = useState('');
+  const [nome, setNome] = useState('');
+
+  const inputElemento = useRef(null);
+  const adicionarNaLista = useAdicionarParticipante();
+  const mensagemDeErro = useMensagemDeErro();
+
+  const addParticipante = (evento) => {
+    evento.preventDefault();
+
+    adicionarNaLista(nome);
+    setNome('');
+    inputElemento.current?.focus();
+  };
+
   return (
     <div className={styles.container}>
       <h2 className={styles.titulo}>Vamos Começar!</h2>
-      <form>
+      <form onSubmit={addParticipante}>
         <input
+          ref={inputElemento}
           type="text"
           placeholder="Insira os nomes dos participantes"
-          value={state}
-          onChange={(e) => setState(e.target.value)}
+          value={nome}
+          onChange={(e) => setNome(e.target.value)}
         />
-        <button
-          type="button"
-          disabled={state === '' || state === 'undefined'}
-          onClick={(e) => {
-            setState(e.target.value);
-            alert('valor enviado' + state);
-          }}
-        >
+        <button type="submit" disabled={!nome}>
           Adicionar
         </button>
+        {mensagemDeErro && (
+          <p className={styles.erro} role="alert">
+            {mensagemDeErro}
+          </p>
+        )}
       </form>
     </div>
   );
