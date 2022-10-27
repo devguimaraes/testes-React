@@ -1,0 +1,21 @@
+.container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnSortear {
+  width: 155px;
+  height: 64px;
+
+  color: white;
+
+  background: rgba(254, 101, 43, 0.99);
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 37.5px;
+}

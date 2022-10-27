@@ -1,14 +1,33 @@
 .container {
+  position: relative;
+  top: -55px;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
   text-align: center;
 
-  margin: 0 8px;
+  background-color: #fff9eb;
+
+  padding-top: 40px;
+  border-top: 2px solid #000000;
+  border-radius: 64px 64px 0px 0px;
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
 }
 
 .titulo {
-  margin-top: 30rem;
   padding-bottom: 1rem;
   color: #4b69fd;
   font-family: 'Poppins';
@@ -24,4 +43,56 @@
   color: red;
   font-size: 12px;
   font-weight: bold;
+}
+
+.div_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 328px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 37.5px;
+  filter: drop-shadow(2px 2px 0px #000000);
+  text-align: center;
+  font-size: 24px;
+}
+
+.input {
+  flex: 1;
+
+  border-radius: 40px;
+  border: none;
+}
+.input::placeholder {
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  color: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+}
+
+.btnAdicionar {
+  width: 155px;
+  height: 48px;
+  font-weight: 400;
+  color: #444444;
+
+  background: #c4c4c4;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 37.5px;
+}
+
+.btnAdicionar:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
 }

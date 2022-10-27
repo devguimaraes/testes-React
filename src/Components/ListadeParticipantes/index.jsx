@@ -5,9 +5,11 @@ export const ListaParticipantes = () => {
   const participantes = useListaDeParticipantes();
 
   return (
-    <ul>
+    <ul className={styles.lista}>
       {participantes.map((lista) => (
-        <li key={lista}>{lista}</li>
+        <li className={styles.itemLista} key={lista}>
+          {lista}
+        </li>
       ))}
     </ul>
   );

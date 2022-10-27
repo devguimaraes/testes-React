@@ -1,25 +1,23 @@
 .header_background {
   width: 100%;
-  position: absolute;
-
+  gap: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-color: #4B69FD;
+  background-color: #4b69fd;
 
   @media (min-width: 1024px) {
     flex-direction: row;
   }
 
-  @media (min-width: 1440px){
+  @media (min-width: 1440px) {
     justify-content: space-around;
   }
 }
 
-
-.logo{
+.logo {
   padding-top: 55px;
   position: relative;
 
@@ -28,9 +26,9 @@
   }
 }
 
-.logotipo_imagem{
+.logotipo_imagem {
+  z-index: 1;
   width: 280px;
   position: relative;
-  bottom: -22px;
-
+  bottom: 31px;
 }

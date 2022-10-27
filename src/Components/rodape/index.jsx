@@ -12,8 +12,9 @@ export const Rodape = () => {
 
   return (
     <footer>
-      <div>
+      <div className={styles.container}>
         <button
+          className={styles.btnSortear}
           disabled={participantes.length < 3}
           onClick={() => {
             iniciarSorteio();
