@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Descreve a página de configuracao Deve Ser renderizada corretamento 1`] = `
+<div>
+  <header>
+    <div
+      class="header_background"
+    >
+      <div
+        class="logotipo"
+      >
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="/imagens/logo-1024w.png"
+          />
+          <img
+            alt="Logotipo Amigo Secreto"
+            class="logo"
+            src="/imagens/logo-pequeno.png"
+          />
+        </picture>
+      </div>
+      <div>
+        <img
+          alt="Desenho 2d de mulher segurando uma lousa pequena"
+          class="logotipo_imagem"
+          src="/imagens/WavyStock.png"
+        />
+      </div>
+    </div>
+  </header>
+  <main>
+    <div
+      class="container"
+    >
+      <h2
+        class="titulo"
+      >
+        Vamos Começar!
+      </h2>
+      <form>
+        <div
+          class="container_form"
+        >
+          <div
+            class="div_input"
+          >
+            <span>
+              <svg
+                class="icon"
+                fill="currentColor"
+                height="22"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                width="22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                />
+                <path
+                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <input
+              class="input"
+              placeholder="Insira os nomes dos participantes"
+              type="text"
+              value=""
+            />
+          </div>
+          <button
+            class="btnAdicionar"
+            disabled=""
+            type="submit"
+          >
+            Adicionar
+          </button>
+        </div>
+        
+      </form>
+    </div>
+    <ul
+      class="lista"
+    />
+    <footer>
+      <div
+        class="container"
+      >
+        <button
+          class="btnSortear"
+          disabled=""
+        >
+          Iniciar Brincadeira
+        </button>
+        <img
+          alt="Desenho 2d de sacolas uma em frente a outra"
+          src="./imagens/sacolas.png"
+        />
+      </div>
+    </footer>
+  </main>
+</div>
+`;
