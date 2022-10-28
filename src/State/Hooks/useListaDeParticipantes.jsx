@@ -5,4 +5,5 @@ export const useListaDeParticipantes = () => {
   return useRecoilValue(listaDeParticipantesState)
 }
 
+export default useListaDeParticipantes
 
