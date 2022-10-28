@@ -36,9 +36,7 @@ export const Sorteados = () => {
           >
             <option>Selecione seu nome</option>
             {participantes.map((participante) => (
-              <option selected key={participante} select>
-                {participante}
-              </option>
+              <option key={participante}>{participante}</option>
             ))}
           </select>
           <p className={styles.paragrafo}>
