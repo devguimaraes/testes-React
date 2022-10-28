@@ -20,7 +20,11 @@ exports[`Teste de snapshot tela Sorteio Deve ser renderizado corretamente 1`] = 
           name="participanteDaVez"
           placeholder="Selecione o seu nome"
           required=""
-        />
+        >
+          <option>
+            Selecione seu nome
+          </option>
+        </select>
         <p
           class="paragrafo"
         >

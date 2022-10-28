@@ -9,7 +9,9 @@ exports[`Descreve a página de configuracao Deve Ser renderizada corretamento 1`
       <div
         class="logotipo"
       >
-        <button>
+        <button
+          class="btnNavegacao"
+        >
           <picture>
             <source
               media="(min-width: 1024px)"

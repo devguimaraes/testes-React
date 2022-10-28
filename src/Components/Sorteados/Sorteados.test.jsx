@@ -38,7 +38,7 @@ describe('Na página Sorteio', () => {
     );
 
     const opcoes = screen.queryAllByRole('option');
-    expect(opcoes).toHaveLength(participantess.length);
+    expect(opcoes).toHaveLength(participantess.length + 1);
   });
 
   test('Verifica se amigo secreto sorteado é renderizado na tela quando solicitado.', () => {
@@ -52,7 +52,7 @@ describe('Na página Sorteio', () => {
 
     fireEvent.change(select, {
       target: {
-        value: participantess[1],
+        value: participantess[0],
       },
     });
 
