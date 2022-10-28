@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teste de snapshot tela Sorteio Deve ser renderizado corretamente 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h2
+      class="titulo"
+    >
+      Quem vai tirar o papelzinho?
+    </h2>
+    <section>
+      <form>
+        <select
+          id="participanteDaVez"
+          name="participanteDaVez"
+          placeholder="Selecione o seu nome"
+          required=""
+        />
+        <p>
+          Clique em sortear para descobrir quem é seu amigo secreto!
+        </p>
+        <button>
+          Sortear
+        </button>
+      </form>
+      
+    </section>
+  </div>
+</div>
+`;
