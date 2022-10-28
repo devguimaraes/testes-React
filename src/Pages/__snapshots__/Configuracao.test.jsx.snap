@@ -9,17 +9,19 @@ exports[`Descreve a página de configuracao Deve Ser renderizada corretamento 1`
       <div
         class="logotipo"
       >
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="/imagens/logo-1024w.png"
-          />
-          <img
-            alt="Logotipo Amigo Secreto"
-            class="logo"
-            src="/imagens/logo-pequeno.png"
-          />
-        </picture>
+        <button>
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="/imagens/logo-1024w.png"
+            />
+            <img
+              alt="Logotipo Amigo Secreto"
+              class="logo"
+              src="/imagens/logo-pequeno.png"
+            />
+          </picture>
+        </button>
       </div>
       <div>
         <img
