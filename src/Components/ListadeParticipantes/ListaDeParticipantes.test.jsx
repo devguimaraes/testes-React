@@ -11,7 +11,7 @@ jest.mock('../../State/Hooks/useListaDeParticipantes', () => {
 
 describe('Verifica se a lista de participantes comeca vazia', () => {
   beforeEach(() => {
-    (useListaDeParticipantes).mockReturnValue([])
+    useListaDeParticipantes.mockReturnValue([]);
   });
 
   test('Verifica se a lista comeca vazia', () => {
@@ -25,12 +25,12 @@ describe('Verifica se a lista de participantes comeca vazia', () => {
   });
 });
 
-describe('merda, não to entendo nada, mas a lista precisa ter participantes', () => {
+describe('lista precisa ter participantes', () => {
   const participantes = ['Ana', 'Rita', 'Joana', 'Iracema', 'Carolina'];
   beforeEach(() => {
-    (useListaDeParticipantes).mockReturnValue(participantes)
+    useListaDeParticipantes.mockReturnValue(participantes);
   });
-  test('Verifica se a lista', () => {
+  test('Verifica se a lista esta preenchida', () => {
     render(
       <RecoilRoot>
         <ListaParticipantes />

@@ -10,10 +10,17 @@ jest.mock('../../State/Hooks/useListaDeParticipantes', () => {
 });
 
 const mockadoNavegacao = jest.fn();
+const mockDoSorteio = jest.fn();
 
 jest.mock('react-router-dom', () => {
   return {
     useNavigate: () => mockadoNavegacao,
+  };
+});
+
+jest.mock('../../State/Hooks/useSorteador', () => {
+  return {
+    useSorteador: () => mockDoSorteio,
   };
 });
 
@@ -64,5 +71,6 @@ describe('Verifica se botao fica habilitado com mais de tres participantes na li
     fireEvent.click(botao);
     expect(mockadoNavegacao).toHaveBeenCalledTimes(1);
     expect(mockadoNavegacao).toHaveBeenCalledWith('/sorteio');
+    expect(mockDoSorteio).toBeCalledTimes(1);
   });
 });
