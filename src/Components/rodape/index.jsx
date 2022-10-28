@@ -1,10 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import { useListaDeParticipantes } from '../../State/Hooks/useListaDeParticipantes';
+import { useSorteador } from '../../State/Hooks/useSorteador';
 import styles from './rodape.module.scss';
 
 export const Rodape = () => {
   const participantes = useListaDeParticipantes();
   const history = useNavigate();
+  const sortear = useSorteador();
 
   const iniciarSorteio = () => {
     return history('/sorteio');
@@ -17,6 +19,7 @@ export const Rodape = () => {
           className={styles.btnSortear}
           disabled={participantes.length < 3}
           onClick={() => {
+            sortear();
             iniciarSorteio();
           }}
         >
