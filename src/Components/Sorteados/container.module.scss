@@ -6,6 +6,7 @@
   flex-direction: column;
 
   align-items: center;
+  justify-content: center;
   text-align: center;
 
   background-color: #fff9eb;
@@ -19,6 +20,13 @@
   }
 }
 
+.sessao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .titulo {
   padding-bottom: 1rem;
   color: #4b69fd;
@@ -28,4 +36,72 @@
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+}
+
+.input {
+  width: 328px;
+  height: 48px;
+
+  background-color: #ffffff;
+  border: 1px solid #000000;
+
+  border-radius: 37.5px;
+  filter: drop-shadow(2px 2px 0px #000000);
+
+  text-align: center;
+  font-size: 24px;
+}
+
+.paragrafo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #444444;
+
+  margin: 32px 0px;
+}
+
+.btnSortear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto 46px auto;
+
+  width: 155px;
+  height: 59.53px;
+
+  padding: 16px;
+  gap: 10px;
+  font-weight: 600;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  text-align: center;
+
+  background: #fe652b;
+  mix-blend-mode: normal;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 37.5px;
+}
+
+.amigoSecreto {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: rgba(254, 101, 43, 0.99);
+
+  mix-blend-mode: normal;
+}
+
+.imgAviao {
+  margin-top: 24px;
 }

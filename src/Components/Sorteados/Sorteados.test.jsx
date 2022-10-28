@@ -52,7 +52,7 @@ describe('Na página Sorteio', () => {
 
     fireEvent.change(select, {
       target: {
-        value: participantess[0],
+        value: participantess[1],
       },
     });
 

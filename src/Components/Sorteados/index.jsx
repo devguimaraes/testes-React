@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useListaDeParticipantes } from '../../State/Hooks/useListaDeParticipantes';
 import { useResultadoSorteio } from '../../State/Hooks/useResultadoSorteio';
 import styles from './container.module.scss';
+import { BsFillDice5Fill } from 'react-icons/bs';
 
 export const Sorteados = () => {
   const participantes = useListaDeParticipantes();
@@ -22,9 +23,10 @@ export const Sorteados = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.titulo}>Quem vai tirar o papelzinho?</h2>
-      <section>
+      <section className={styles.sessao}>
         <form onSubmit={sortear}>
           <select
+            className={styles.input}
             required
             name="participanteDaVez"
             id="participanteDaVez"
@@ -36,14 +38,23 @@ export const Sorteados = () => {
               <option key={participante}>{participante}</option>
             ))}
           </select>
-          <p>Clique em sortear para descobrir quem é seu amigo secreto!</p>
-          <button>Sortear</button>
+          <p className={styles.paragrafo}>
+            Clique em sortear para descobrir quem é seu amigo secreto!
+          </p>
+          <button className={styles.btnSortear}>
+            <BsFillDice5Fill size={24} /> Sortear!
+          </button>
         </form>
         {amigoSecreto && (
-          <p aria-label="resposta" role="alert">
+          <p className={styles.amigoSecreto} role="alert">
             {amigoSecreto}
           </p>
         )}
+        <img
+          src="/imagens/aviao.png"
+          className={styles.imgAviao}
+          alt="Avião de papel na cor verde"
+        />
       </section>
     </div>
   );
